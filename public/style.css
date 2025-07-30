@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #e5ddd5;
+    font-family: 'Roboto', sans-serif;
+}
+
+section.chat__section {
+    width: 800px;
+    max-width: 90%;
+    background: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.brand {
+    padding: 16px 20px;
+    background: #075e54;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.brand h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.message__area {
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background: url('https://www.transparenttextures.com/patterns/white-wall-3.png') repeat;
+    background-color: #ece5dd;
+    padding-top: 40px;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    padding: 16px;
+    font-size: 16px;
+    outline: none;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    resize: none;
+}
+
+.message {
+    padding: 10px 14px;
+    border-radius: 7.5px;
+    margin-bottom: 10px;
+    max-width: 60%;
+    position: relative;
+    line-height: 1.4;
+    font-size: 15px;
+    word-wrap: break-word;
+}
+
+.incoming {
+    background: #fff;
+    color: #303030;
+    align-self: flex-start;
+    border: 1px solid #ddd;
+}
+
+.outgoing {
+    background: #dcf8c6;
+    color: #303030;
+    align-self: flex-end;
+}
+
+.message h4 {
+    position: absolute;
+    top: -18px;
+    left: 0;
+    color: #555;
+    font-size: 12px;
+}
